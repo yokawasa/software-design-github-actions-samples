@@ -21,6 +21,6 @@
 | 第3章 リスト9 - Environmentを使って複数環境にデプロイするワークフローの例 |  [source](chap3/workflows/multi-env-deploy.yml)  |
 | 第3章 リスト10 - TerraformのHCLファイル |  [source](chap3/main.tf)  |
 | 第3章 リスト11 - Terraformを活用したGitHub Actionsワークフロー |  [source](chap3/workflows/terraform.yml)  |
-| 第3章 リスト12 - actions/github-scriptでJavaScriptクライアントライブラリをAPI認証済みで利用する例 |  [source](chap3/workflows/terraform-pr-comment.yml)  |
+| 第3章 リスト12 - actions/github-scriptを活用してPull Requestにコメントを投稿する例 |  [source](chap3/workflows/terraform-pr-comment.yml)  |
 | 第3章 リスト13 - .github/labeler-config.yml |  [source](chap3/labeler-config.yml)  |
 | 第3章 リスト14 - .github/workflows/labeler.yml |  [source](chap3/workflows/labeler.yml)  |
