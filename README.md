@@ -1,7 +1,7 @@
 # software-design-github-actions-samples
 
 | 名前 | ソース  |
-| ----  | ---- | ---- |
+| ---- | ---- |
 | 第1章 リスト1 - ワークフローYAMLの例 | [source](chap1/workflows/simple1.yml)  |
 | 第1章 リスト2 - ステップ定義例 |  [source](chap1/workflows/simple2.yml)  |
 | 第2章 リスト1 - go.mod |  [source](chap2/go.mod)  |
