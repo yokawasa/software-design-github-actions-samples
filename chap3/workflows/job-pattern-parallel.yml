@@ -1,0 +1,16 @@
+name: Job Pattern - Parallel
+on: push
+
+jobs:
+  job_a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job A"
+  job_b:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job B"
+  job_c:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job C"

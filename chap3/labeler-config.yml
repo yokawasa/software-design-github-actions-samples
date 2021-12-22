@@ -1,0 +1,11 @@
+# kubernetes配下ファイル+サブフォルダ含む
+kubernetes:
+- kubernetes/**/*
+
+# cloudformation配下のファイル
+cloudformation:
+- cloudformation/*
+
+# terraform配下のファイル
+terraform:
+- terraform/*

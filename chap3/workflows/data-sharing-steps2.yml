@@ -1,0 +1,12 @@
+name: Data sharing between multi-steps 2
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set my number
+        run: echo '::set-output name=my-number::12345'
+        id: set-number
+      - name: Get my number
+        run: echo "My number is ${{ steps.set-number.outputs.my-number }}"

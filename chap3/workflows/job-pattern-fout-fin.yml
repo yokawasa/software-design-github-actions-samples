@@ -1,0 +1,28 @@
+name: Job Pattern - Fan-out and Fan-in
+on: push
+
+jobs:
+  job_a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job A"
+  job_b:
+    needs: job_a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job B"
+  job_c:
+    needs: job_a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job C"
+  job_d:
+    needs: job_a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job D"
+  job_e:
+    needs: [job_b, job_c, job_d]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A step in job E"

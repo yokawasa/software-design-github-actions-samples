@@ -1,0 +1,13 @@
+name: Data sharing between multi-steps 1
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Write data in a job 
+        run: echo "12345" > ${GITHUB_WORKSPACE}/myoutput.txt
+      - name: Read data in a job
+        run: |
+          value=$(cat ${GITHUB_WORKSPACE}/myoutput.txt)
+          echo "Read data: ${value}"
