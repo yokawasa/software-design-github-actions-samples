@@ -1,0 +1,17 @@
+name: Steps Sample
+on:
+  push:
+
+jobs:
+  sample_job:
+    runs-on: ubuntu-latest
+    steps:
+      # ステップ例:利用するアクションの定義
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      # ステップ例:コマンドの定義(シングルライン)
+      - run: npm install
+      # ステップ例:コマンドの定義(マルチライン)
+      - run: |
+          npm ci
+          npm build

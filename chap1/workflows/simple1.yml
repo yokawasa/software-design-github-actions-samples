@@ -1,0 +1,25 @@
+name: Test Workflow
+on:
+  push:
+
+jobs:
+  job_one:
+    name: Job 1
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Step 1
+        run: echo "cmd1"
+      - name: Step 2
+        run: echo "cmd2"
+      - name: Step 3 
+        run: echo "cmd3"
+  job_two:
+    name: Job 2
+    runs-on: macos-11
+    steps:
+      - name: Step 1
+        run: echo "cmd1"
+      - name: Step 2
+        run: echo "cmd2"
+      - name: Step 3 
+        run: echo "cmd3"
