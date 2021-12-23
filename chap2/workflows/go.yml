@@ -9,16 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    # リポジトリをチェックアウト
     - uses: actions/checkout@v2
-
+    # Go環境のセットアップ
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
         go-version: 1.17
-
+    # Goアプリケーションのビルド
     - name: Build
       run: go build -v ./...
-
+    # テストの実行
     - name: Test
       run: go test -v ./...
 
