@@ -1,4 +1,6 @@
-# software-design-github-actions-samples
+# GitHub Actions記事公開サンプルコード
+
+これは「Software Design 2022年2月号 第2特集 GitHub Actionsで簡単・快適CI/CD」の公開サンプルコードを管理するリポジトリです。
 
 | 名前 | ソース  |
 | ---- | ---- |
